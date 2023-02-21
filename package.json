@@ -1,6 +1,6 @@
 {
   "name": "@moyotsukai/bezier",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.tsx",
   "scripts": {
@@ -10,7 +10,7 @@
     "transpile": "babel src -d dist --copy-files"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
