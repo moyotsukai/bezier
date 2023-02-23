@@ -15,6 +15,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
+              plugins: ["@babel/plugin-proposal-export-namespace-from"],
               presets: [
                 '@babel/preset-env',
                 '@babel/preset-react',

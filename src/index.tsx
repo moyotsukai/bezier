@@ -19,7 +19,7 @@ import { rotatePoint as vec2RotatePoint } from "./vec2/rotatePoint"
 import { translatePoint as vec2TranslatePoint } from "./vec2/translatePoint"
 import { Vec2 as Vec2Type } from "./vec2/Vec2"
 
-namespace Bezier {
+export namespace Bezier {
 
   //Types
   export type Vec2 = Vec2Type
