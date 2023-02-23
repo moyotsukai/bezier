@@ -18,14 +18,6 @@ module.exports = (api) => {
           },
         },
       ].filter(Boolean),
-    ],
-    plugins: [
-      [
-        "@babel/plugin-transform-typescript",
-        {
-          "allowNamespaces": true
-        }
-      ],
     ]
   }
 }
