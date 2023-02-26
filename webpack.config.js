@@ -7,6 +7,7 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: path.join(__dirname, 'examples/src/index.tsx'),
+  target: ["web", "es5"],
   module: {
     rules: [
       {
