@@ -3,6 +3,7 @@ import { BezierControlPointsProps } from "./spline/BezierControlPoints.type"
 import { BezierPoints } from "./spline/BezierPoints"
 import { BezierSpline } from "./spline/BezierSpline"
 import { BezierStyleProps } from "./spline/BezierStyle"
+import { getStartAnchor as bezierGetStartAnchor } from "./spline/getStartAnchor"
 import { getEndAnchor as bezierGetEndAnchor } from "./spline/getEndAnchor"
 import { mirrorPath as bezierMirrorPath } from "./spline/mirrorPath"
 import { rotatePath as bezierRotatePath } from "./spline/rotatePath"
@@ -41,6 +42,8 @@ namespace Bezier {
 
   //Functions
   export const controlPoints = bezierControlPoints
+
+  export const getStartAnchor = bezierGetStartAnchor
 
   export const getEndAnchor = bezierGetEndAnchor
 

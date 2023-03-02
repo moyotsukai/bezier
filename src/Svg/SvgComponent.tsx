@@ -7,10 +7,11 @@ import SvgCubicBezier from "./SvgCubicBezier"
 import SvgCubicBezierInfo from "./SvgCubicBezierGuide"
 
 type Props = {
-  splines: BezierSpline[]
-  width?: number
-  height?: number
-  expandCanvasToEdge?: boolean
+  splines: BezierSpline[],
+  width?: number,
+  height?: number,
+  expandCanvasToEdge?: boolean,
+  shouGuide?: boolean
 }
 
 const A4: Vec2 = {
@@ -18,8 +19,8 @@ const A4: Vec2 = {
   y: 595.28
 }
 
-const SvgComponent: React.FC<Props> = ({ splines, width = A4.x, height = A4.y, expandCanvasToEdge }: Props) => {
-  const showGuide = useShowGuideValue()
+const SvgComponent: React.FC<Props> = ({ splines, width = A4.x, height = A4.y, expandCanvasToEdge, shouGuide }: Props) => {
+  const showGuide = shouGuide ?? useShowGuideValue()
 
   return (
     <SvgCanvas width={width} height={height} expandCanvasToEdge={expandCanvasToEdge}>

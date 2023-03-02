@@ -1,21 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "DOM",
-      "ES6",
-      "DOM.Iterable",
-      "ScriptHost",
-      "ES2016.Array.Include"
-    ],
+    "module": "ES6",
     "jsx": "react-jsx",
-    "module": "ES2015",
-    "declaration": true,
-    "outDir": "./dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src"

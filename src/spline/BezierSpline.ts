@@ -5,6 +5,7 @@ import { rotatePath } from './rotatePath'
 import { BezierPoints } from './BezierPoints'
 import { Vec2 } from '../vec2/Vec2'
 import { BezierStyleProps } from './BezierStyle'
+import { getStartAnchor } from './getStartAnchor'
 
 export class BezierSpline {
   private _paths: BezierPoints[]
@@ -27,6 +28,10 @@ export class BezierSpline {
 
   get fill(): string | null {
     return this._fill
+  }
+
+  get startAnchor(): Vec2 {
+    return getStartAnchor(this._paths)
   }
 
   get endAnchor(): Vec2 {
