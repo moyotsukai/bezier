@@ -4,8 +4,8 @@ var _rollupPluginBabelHelpers = require('../_virtual/_rollupPluginBabelHelpers.j
 var jsxRuntime = require('react/jsx-runtime');
 var React = require('react');
 
-var ShowGuideValueContext = React.createContext(false);
-var ShowGuideDispatchContext = React.createContext(function () {
+var ShowGuideValueContext = /*#__PURE__*/React.createContext(false);
+var ShowGuideDispatchContext = /*#__PURE__*/React.createContext(function () {
   return undefined;
 });
 var ShowGuideConatextProvider = function ShowGuideConatextProvider(_ref) {

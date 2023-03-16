@@ -1,4 +1,5 @@
 import { jsx } from 'react/jsx-runtime';
+import '@moyotsukai/bezier/dist/es/index.css';
 
 //The dedault size 841.89px x 595.28px is A4
 var SvgCanvas = function SvgCanvas(_ref) {

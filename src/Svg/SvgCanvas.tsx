@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Svg/Svg.css'
-import { Vec2 } from '../vec2/Vec2'
+import '../styles/svg/svg.css'
+import '@moyotsukai/bezier/dist/es/index.css'
 
 type Props = {
   width?: number

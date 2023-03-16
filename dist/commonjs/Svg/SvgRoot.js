@@ -6,6 +6,7 @@ var jsxRuntime = require('react/jsx-runtime');
 var React = require('react');
 var ShowGuideContext = require('../context/ShowGuideContext.js');
 var ShowGuideToggleButton = require('./ShowGuideToggleButton.js');
+require('@moyotsukai/bezier/dist/es/index.css');
 
 var SvgRoot = function SvgRoot(_ref) {
   var fileName = _ref.fileName,

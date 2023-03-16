@@ -1,6 +1,6 @@
 import babel from "@rollup/plugin-babel"
-import postcss from "rollup-plugin-postcss"
 import typescript from "@rollup/plugin-typescript"
+import postcss from "rollup-plugin-postcss"
 
 const extensions = [".ts", ".tsx", ".js", ".jsx"]
 
@@ -12,12 +12,9 @@ export default [
       format: "cjs",
       exports: "named",
       sourcemap: true,
-      preserveModules: true
+      preserveModules: true,
     },
     plugins: [
-      postcss({
-        extract: true,
-      }),
       babel({
         extensions,
       }),
@@ -26,6 +23,9 @@ export default [
         rootDir: "src",
         declarationDir: "dist/commonjs",
       }),
+      postcss({
+        extract: true,
+      })
     ],
   },
   {
@@ -35,12 +35,9 @@ export default [
       format: "es",
       exports: "named",
       sourcemap: true,
-      preserveModules: true
+      preserveModules: true,
     },
     plugins: [
-      postcss({
-        extract: true,
-      }),
       babel({
         extensions,
       }),
@@ -49,6 +46,9 @@ export default [
         rootDir: "src",
         declarationDir: "dist/es",
       }),
+      postcss({
+        extract: true,
+      })
     ],
   },
 ]

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Svg/Svg.css';
+import '../styles/svg/svg.css';
+import '@moyotsukai/bezier/dist/es/index.css';
 type Props = {
     width?: number;
     height?: number;

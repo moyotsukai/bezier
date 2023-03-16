@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSetShowGuide, useShowGuideValue } from '../context/ShowGuideContext'
-import '../styles/Svg/Svg.css'
+import '../styles/svg/svg.css'
+import '@moyotsukai/bezier/dist/es/index.css'
 
 export const ShowGuideToggleButton: React.FC = () => {
   const [showGuide, setShowGuide] = [useShowGuideValue(), useSetShowGuide()]

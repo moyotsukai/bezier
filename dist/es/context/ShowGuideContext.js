@@ -1,9 +1,9 @@
 import { slicedToArray as _slicedToArray } from '../_virtual/_rollupPluginBabelHelpers.js';
 import { jsx } from 'react/jsx-runtime';
-import { createContext, useState, useContext } from 'react';
+import { useState, useContext, createContext } from 'react';
 
-var ShowGuideValueContext = createContext(false);
-var ShowGuideDispatchContext = createContext(function () {
+var ShowGuideValueContext = /*#__PURE__*/createContext(false);
+var ShowGuideDispatchContext = /*#__PURE__*/createContext(function () {
   return undefined;
 });
 var ShowGuideConatextProvider = function ShowGuideConatextProvider(_ref) {

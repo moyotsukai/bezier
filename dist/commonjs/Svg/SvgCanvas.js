@@ -3,6 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var jsxRuntime = require('react/jsx-runtime');
+require('@moyotsukai/bezier/dist/es/index.css');
 
 //The dedault size 841.89px x 595.28px is A4
 var SvgCanvas = function SvgCanvas(_ref) {

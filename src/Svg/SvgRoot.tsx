@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import { ShowGuideConatextProvider } from '../context/ShowGuideContext'
-import '../styles/Svg/Svg.css'
 import { ShowGuideToggleButton } from './ShowGuideToggleButton'
+import '../styles/svg/svg.css'
+import '@moyotsukai/bezier/dist/es/index.css'
 
 type Props = {
   fileName?: string

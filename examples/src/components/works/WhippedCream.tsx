@@ -16,8 +16,6 @@ const WhippedCream: React.FC = () => {
     ]
   })
 
-
-
   const valleyPath = Bezier.spline({
     start: { x: CENTER.x - 5, y: CENTER.y - 25 },
     points: [
@@ -27,8 +25,6 @@ const WhippedCream: React.FC = () => {
       }
     ]
   })
-
-
 
   const splines: Bezier.Spline[] = Array(NUM).fill(0).map((_, index) => {
     return [

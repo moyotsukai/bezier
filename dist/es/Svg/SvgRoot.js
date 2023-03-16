@@ -2,6 +2,7 @@ import { jsxs, jsx } from 'react/jsx-runtime';
 import { useRef } from 'react';
 import { ShowGuideConatextProvider } from '../context/ShowGuideContext.js';
 import { ShowGuideToggleButton } from './ShowGuideToggleButton.js';
+import '@moyotsukai/bezier/dist/es/index.css';
 
 var SvgRoot = function SvgRoot(_ref) {
   var fileName = _ref.fileName,

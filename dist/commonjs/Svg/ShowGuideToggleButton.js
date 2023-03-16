@@ -2,6 +2,7 @@
 
 var jsxRuntime = require('react/jsx-runtime');
 var ShowGuideContext = require('../context/ShowGuideContext.js');
+require('@moyotsukai/bezier/dist/es/index.css');
 
 var ShowGuideToggleButton = function ShowGuideToggleButton() {
   var _ref = [ShowGuideContext.useShowGuideValue(), ShowGuideContext.useSetShowGuide()],

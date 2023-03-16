@@ -1,5 +1,6 @@
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useShowGuideValue, useSetShowGuide } from '../context/ShowGuideContext.js';
+import '@moyotsukai/bezier/dist/es/index.css';
 
 var ShowGuideToggleButton = function ShowGuideToggleButton() {
   var _ref = [useShowGuideValue(), useSetShowGuide()],
