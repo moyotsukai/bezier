@@ -1,10 +1,10 @@
 import { midpoint } from '../vec2/midpoint.js';
 import { translatePoint } from '../vec2/translatePoint.js';
 
-var translatePath = function translatePath(props) {
-  var angle = props.angle,
-    distance = props.distance,
-    path = props.path;
+var translatePath = function translatePath(_ref) {
+  var angle = _ref.angle,
+    distance = _ref.distance,
+    path = _ref.path;
   var mirrored = path.map(function (curve) {
     var startAnchor = translatePoint({
       angle: angle,

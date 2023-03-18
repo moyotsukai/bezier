@@ -3,5 +3,5 @@ type Props = {
     point: Vec2;
     angle: number;
 };
-export declare const inferLine: (props: Props) => [Vec2, Vec2];
+export declare const inferLine: ({ point, angle }: Props) => [Vec2, Vec2];
 export {};

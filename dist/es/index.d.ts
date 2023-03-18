@@ -24,7 +24,7 @@ declare namespace Bezier {
     const controlPoints: (props: BezierControlPointsProps) => BezierPoints[];
     const getStartAnchor: (paths: BezierPoints[]) => Vec2Type;
     const getEndAnchor: (paths: BezierPoints[]) => Vec2Type;
-    const mirrorPath: (props: {
+    const mirrorPath: ({ center, angle, path }: {
         center: Vec2Type;
         angle: number;
         path: BezierPoints[];
@@ -34,7 +34,7 @@ declare namespace Bezier {
         angle: number;
         path: BezierPoints[];
     }) => BezierPoints[];
-    const translatePath: (props: {
+    const translatePath: ({ angle, distance, path }: {
         angle: number;
         distance: number;
         path: BezierPoints[];
@@ -45,7 +45,7 @@ declare namespace Bezier {
         end: Vec2Type;
     }) => number;
     const distance: (a: Vec2Type, b: Vec2Type) => number;
-    const inferLine: (props: {
+    const inferLine: ({ point, angle }: {
         point: Vec2Type;
         angle: number;
     }) => [Vec2Type, Vec2Type];

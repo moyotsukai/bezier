@@ -130,7 +130,7 @@ const path = Bezier.spline({
 
 - - - 
 
-Option 2: Define the control points using _start-control-angle_ (`sca`), _start-control-length_ (`scl`), _end-control-angle_ (`eca`), and _end-control-length_ (`ecl`)
+Option 2: Define the control points using _start-control-angle_ (`sca`), _start-control-length_ (`scl`), _end-control-angle_ (`eca`), and _end-control-length_ (`ecl`).
 
 ```tsx
 const path = Bezier.spline({
@@ -148,7 +148,7 @@ const path = Bezier.spline({
 
 - - -
 
-Option 3: Define the control points using _control-midpoint-angle_ (`cma`), _control-midpoint-length_ (`cml`), _ratio of control-distance to end-anchor-length_ (`cdr`), and _control-distance-angle_ (`cda`)
+Option 3: Define the control points using _control-midpoint-angle_ (`cma`), _control-midpoint-length_ (`cml`), _ratio of control-distance to end-anchor-length_ (`cdr`), and _control-distance-angle_ (`cda`).
 
 ```tsx
 const path = Bezier.spline({
@@ -406,8 +406,6 @@ function midpoint(a: Vec2, b: Vec2): Vec2
 
 
 # Examples
-
-## Example 1
 
 ```tsx
 import Bezier from '@moyotsukai/bezier'

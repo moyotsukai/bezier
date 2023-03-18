@@ -4,5 +4,5 @@ type Props = {
     distance: number;
     path: BezierPoints[];
 };
-export declare const translatePath: (props: Props) => BezierPoints[];
+export declare const translatePath: ({ angle, distance, path }: Props) => BezierPoints[];
 export {};

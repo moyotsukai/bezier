@@ -3,10 +3,10 @@
 var midpoint = require('../vec2/midpoint.js');
 var mirrorPoint = require('../vec2/mirrorPoint.js');
 
-var mirrorPath = function mirrorPath(props) {
-  var center = props.center,
-    angle = props.angle,
-    path = props.path;
+var mirrorPath = function mirrorPath(_ref) {
+  var center = _ref.center,
+    angle = _ref.angle,
+    path = _ref.path;
   var mirrored = path.map(function (curve) {
     var startAnchor = mirrorPoint.mirrorPoint({
       center: center,

@@ -5,5 +5,5 @@ type Props = {
     angle: number;
     path: BezierPoints[];
 };
-export declare const mirrorPath: (props: Props) => BezierPoints[];
+export declare const mirrorPath: ({ center, angle, path }: Props) => BezierPoints[];
 export {};
