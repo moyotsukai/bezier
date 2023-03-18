@@ -9,9 +9,7 @@ type Props = {
   path: BezierPoints[]
 }
 
-export const mirrorPath = (props: Props): BezierPoints[] => {
-  const { center, angle, path } = props
-
+export const mirrorPath = ({ center, angle, path }: Props): BezierPoints[] => {
   const mirrored: BezierPoints[] = path.map((curve) => {
     const startAnchor: Vec2 = mirrorPoint({ center: center, angle: angle, point: curve.startAnchor })
     const startControl: Vec2 = mirrorPoint({ center: center, angle: angle, point: curve.startControl })

@@ -7,8 +7,7 @@ type Props = {
   angle: number
 }
 
-export const inferLine = (props: Props): [Vec2, Vec2] => {
-  const { point, angle } = props
+export const inferLine = ({ point, angle }: Props): [Vec2, Vec2] => {
   const lineLength = 1000
   const endPoint: Vec2 = {
     x: point.x + cos(angle) * lineLength,
