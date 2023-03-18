@@ -405,7 +405,7 @@ function midpoint(a: Vec2, b: Vec2): Vec2
 
 
 
-# Examples
+# Example
 
 ```tsx
 import Bezier from '@moyotsukai/bezier'
