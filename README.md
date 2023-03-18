@@ -445,13 +445,28 @@ const Example: React.FC = () => {
 
   const path_3 = Bezier.spline({
     start: path_1.endAnchor,
-    points: []
+    points: [
+      {
+        end: path_2.endAnchor,
+        controls: { sca: 0, scl: 0, eca: 0, ecl: 0 }
+      }
+    ]
   })
 
   const splines: Bezier.Spline[] = Array(NUM).fill(0).map((_, index) => {
     return [
       path_1.rotate({ center: CENTER, angle: 360 / NUM * index }),
-      path_2.rotate({ center: CENTER, angle: 360 / NUM * index })
+      path_2.rotate({ center: CENTER, angle: 360 / NUM * index }),
+      path_3.rotate({ center: CENTER, angle: 360 / NUM * index }),
+      Bezier.spline({
+        start: path_2.rotate({ center: CENTER, angle: 360 / NUM * index }).endAnchor,
+        points: [
+          {
+            end: path_1.rotate({ center: CENTER, angle: 360 / NUM * (index + 1) }).endAnchor,
+            controls: { sca: 0, scl: 0, eca: 0, ecl: 0 }
+          }
+        ]
+      })
     ]
   }).flat()
 
